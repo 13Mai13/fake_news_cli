@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.282  # Update to the latest version of ruff-pre-commit
+    hooks:
+      - id: ruff
+        name: ruff
+        description: "Run 'ruff' for linting and formatting"
+        entry: ruff
+        language: python
+        types_or: [python, pyi, jupyter]
+        args: ["--fix", "--force-exclude"]
+        require_serial: true
+        additional_dependencies: []
+        minimum_pre_commit_version: "2.9.2"
