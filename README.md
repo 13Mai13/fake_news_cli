@@ -11,3 +11,6 @@ Python 3.12
 1. Run `pre-commit install`
 2. Run `pre-commit run --all-files` -> check all the files are correct
 
+### MyPy
+
+- Run mypy across all files `python -m mypy . ` 
