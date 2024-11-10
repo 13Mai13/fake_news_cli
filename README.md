@@ -14,3 +14,14 @@ Python 3.12
 ### MyPy
 
 - Run mypy across all files `python -m mypy . ` 
+
+# Extract data
+
+You need to have [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet) downloaded in the same level: 
+
+```
+.
+├── FakeNewsNet
+...
+├── fake_news_cli
+```
