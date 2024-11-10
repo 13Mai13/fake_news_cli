@@ -2,6 +2,7 @@ import typer
 
 goodbye_app = typer.Typer()
 
+
 @goodbye_app.command()
 def farewell(name: str, formal: bool = False):
     """

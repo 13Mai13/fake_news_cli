@@ -2,6 +2,7 @@ import typer
 
 hello_app = typer.Typer()
 
+
 @hello_app.command()
 def greet(name: str):
     """
