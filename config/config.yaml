@@ -1,0 +1,61 @@
+# # Configurations for Machine Learning Pipeline
+
+# Define the algorithms and their specific parameters
+
+algorithms:
+  - name: "RandomForest"
+    parameters:
+      n_estimators: 100
+      max_depth: 10
+      random_state: 42
+
+  - name: "SupportVectorMachine"
+    parameters:
+      kernel: "rbf"
+      C: 1.0
+      gamma: "scale"
+
+  - name: "XGBoost"
+    parameters:
+      learning_rate: 0.1
+      n_estimators: 100
+      max_depth: 6
+
+  - name: "LogisticRegression"
+    parameters:
+      penalty: "l2"
+      C: 1.0
+      solver: "liblinear"
+
+# # Define feature engineering steps
+# feature_engineering:
+#   - name: "StandardScaler"
+#     apply_to: ["numerical_columns"]
+    
+#   - name: "OneHotEncoder"
+#     apply_to: ["categorical_columns"]
+
+#   - name: "PCA"
+#     parameters:
+#       n_components: 10
+#     apply_to: ["all"]
+
+#   - name: "TextVectorizer"
+#     parameters:
+#       max_features: 5000
+#     apply_to: ["text_column"]
+
+# # Set additional configuration options
+# pipeline:
+#   train_test_split:
+#     test_size: 0.2
+#     random_state: 42
+
+#   cross_validation:
+#     folds: 5
+#     scoring: "accuracy"
+    
+#   feature_selection:
+#     method: "SelectKBest"
+#     parameters:
+#       k: 20
