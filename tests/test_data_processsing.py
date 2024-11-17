@@ -1,6 +1,6 @@
 import pandas as pd
 from unittest import mock
-from lib.data_processing.extract_metadata import (
+from lib.data_processing.extract_metadata_handler import (
     transform_news_content,
     save_metadata,
     get_metadata,
